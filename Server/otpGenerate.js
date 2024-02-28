@@ -17,7 +17,6 @@ const transporter = nodemailer.createTransport({
 
 const generateRandomOTP = () => {
     const otp = crypto.randomInt(1000, 10000);
-    console.log("your otp is", otp)
     return otp.toString();
 
   };
